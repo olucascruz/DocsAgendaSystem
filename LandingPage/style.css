@@ -12,3 +12,14 @@
 body{
     background-color: khaki;
 }
+
+.title{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: blueviolet;
+	font-size: 15rem;
+}
+
+.icon{
+	position: absolute;
+	margin-left: 300px;
+}
