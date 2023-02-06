@@ -1,0 +1,9 @@
+.body-index-docs{
+    display: flex;
+    justify-content: space-evenly
+}
+
+li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
