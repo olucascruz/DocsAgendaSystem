@@ -9,10 +9,137 @@
 </head>
 <body>
     <div class="dict">
-        <img src="data-dictionary-user.png" alt="dicionário de dados da entidade usuário">
-        <img src="data-dictionary-event.png" alt="dicionário de dados da entidade evento">
+        <table>
+            <caption>Entidade: User</caption>
+            <thead>
+                <th>Atributos</th>
+                <th>Classe</th>
+                <th>Domínio</th>
+                <th>Tamanho</th>
+                <th>Descrição</th>
+                <th>Valores permitidos</th>
+                <th>Possui valores nulos?</th>
+                <th>Anotações</th>
+    
+              </thead>
+              <tr>
+                <td>user_id</td>
+                <td>Determinante</td>
+                <td>Inteiro</td>
+                <td>10000</td>
+                <td>Identificador do evento</td>
+                <td>[0-9]{1-10000}</td>
+                <td>Não</td>
+                <td>Incrementa 1 a cada evento</td>
+              </tr>
+              <tr>
+                <td>user_name</td>
+                <td>Simples</td>
+                <td>String</td>
+                <td>100</td>
+                <td>Nome do usuário</td>
+                <td>[a-zA-Z]{1-100}</td>
+                <td>Não</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>user_email</td>
+                <td>Simples</td>
+                <td>String</td>
+                <td>50</td>
+                <td>Email do usuário</td>
+                <td>^[a-z][A-Z0-9]{1-40}{@}[a-z][\.][a-z]?</td>
+                <td>Não</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>user_password</td>
+                <td>Simples</td>
+                <td>String</td>
+                <td>50</td>
+                <td>Senha do usuário</td>
+                <td>[.]{6-50}</td>
+                <td>Não</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>user_status</td>
+                <td>Simples</td>
+                <td>Inteiro</td>
+                <td>1</td>
+                <td>Status do usuário</td>
+                <td>{-1-1}</td>
+                <td>Não</td>
+                <td>Formato:<br> -1 conta desativada <br> 0  conta deslogada <br> 1 conta logada   
+                </td>
+              </tr>
+        </table>
+        <table>
+            <caption>Entidade: Event</caption>
+            <thead>
+                <th>Atributos</th>
+                <th>Classe</th>
+                <th>Domínio</th>
+                <th>Tamanho</th>
+                <th>Descrição</th>
+                <th>Valores permitidos</th>
+                <th>Possui valores nulos?</th>
+                <th>Anotações</th>
+    
+              </thead>
+              <tr>
+                <td>event_id</td>
+                <td>Determinante</td>
+                <td>Inteiro</td>
+                <td>10000</td>
+                <td>Identificador do evento</td>
+                <td>[0-9]{1-10000}</td>
+                <td>Não</td>
+                <td>Incrementa 1 a cada evento</td>
+              </tr>
+              <tr>
+                <td>event_title</td>
+                <td>Simples</td>
+                <td>String</td>
+                <td>100</td>
+                <td>Titulo do evento</td>
+                <td>[a-zA-Z]{1-100}</td>
+                <td>Não</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>event_description</td>
+                <td>Simples</td>
+                <td>String</td>
+                <td>200</td>
+                <td>Descrição do evento</td>
+                <td>[a-zA-Z0-9]{1-200}</td>
+                <td>Sim</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>event_date</td>
+                <td>Simples</td>
+                <td>String</td>
+                <td>20</td>
+                <td>Data do evento</td>
+                <td>[a-zA-Z0-9\:\/]{14-20}</td>
+                <td>Não</td>
+                <td>Formato:<br> dd/mm/YY HH:MM</td>
+              </tr>
+              <tr>
+                <td>user_id</td>
+                <td>Determinante</td>
+                <td>Inteiro</td>
+                <td>10000</td>
+                <td>Identificador do usuário</td>
+                <td>[0-9]{1-10000}</td>
+                <td>Não</td>
+                <td></td>
+              </tr>
+        </table>
     </div>
-
+    
     <a class="link-der" href="/DocsAgendaSystem/entity-relationship-diagram.html">
         Diagrama entidade relacionamento
     </a>

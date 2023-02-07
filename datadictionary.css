@@ -15,3 +15,21 @@ body{
 .link-der{
     font-size: 20px;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+th{
+    width: 200px;
+}
+
+thead{
+    background-color: rgb(221, 217, 217);
+}
