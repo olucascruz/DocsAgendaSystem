@@ -27,7 +27,6 @@ body{
 .icon-calendar{
 	margin-left: 40%;
 	margin-right: 20%;
-	height: 5rem;
 }
 
 .footer{
@@ -38,9 +37,6 @@ body{
 	bottom: 0;
 	right: 0;
 	width: 100%;
-}
-.icon-config{
-	height: 2rem;
 }
 
 .divulgation{
