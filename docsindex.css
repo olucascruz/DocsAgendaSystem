@@ -1,3 +1,7 @@
+body{
+    height: 100vh;
+    width: 100%;
+}
 .body-index-docs{
     display: flex;
     justify-content: space-evenly
