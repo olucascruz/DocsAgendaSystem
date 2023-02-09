@@ -4,12 +4,16 @@
 
 }
 
-.content{
+.screen{
     display: flex;
     flex-direction: row;
 }
 
 .description{
-    display: flex;
-    flex-direction: column;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+img{
+    margin-left: -150px;
 }
